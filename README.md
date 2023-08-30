@@ -1,2 +1,2 @@
-# FaridGosuPage
+# FaridGosuPage 🎈
 Farid's GosuPage 
