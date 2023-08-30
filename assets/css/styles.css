@@ -7,6 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
 body{
     background: #081b29; 
     color: #ededed;
@@ -211,6 +218,9 @@ body{
     width: 100%;
 }
 
+
+/* section home */
+
 .home-sci{
     position: absolute;
     bottom: 40px;
@@ -275,7 +285,7 @@ body{
     max-width: 100%;
     height: auto;
     display: block; 
-    margin: 0 auto; 
+    margin: 0 100px; 
 }
 
 @media (max-width: 1100px) {
@@ -313,9 +323,321 @@ body{
         width: 0;
     }
 }
-    
 
-/* .logo__farid {
-    display: flex;
+/* section about me */
+.about-me{
+    display:flex;
+    justify-content: center;
     align-items: center;
-} */
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+}
+
+
+.heading{
+    font-size: 4rem;
+    margin-top: 4.7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.about-me-img{
+    position:relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.about-me-img img{
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+.about-me-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+.about-me-content{
+    text-align: center;
+}
+
+.about-me-content h3{
+    font-size: 2.3rem;
+    color: var(--main-color);
+}
+
+.about-me-content p{
+    font-size: 1.3rem;
+    margin: 2rem 0 3rem;
+}
+
+.about-me-content .btn-box{
+    display: inline-block;
+    width: 345px;
+    height: 50px; 
+}
+
+
+.btn-box .btns a::before{
+    background: var(--second-bg-color);
+}
+
+/* section my projects */
+.my-projects-content .content .btn-box{
+    display: inline-block;
+    height: 35px; 
+}
+
+.my-projects{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.my-projects .my-projects-row{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.my-projects-row .my-projects-column{
+    flex: 1 1 40rem;
+}
+
+.my-projects-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.my-projects-column .my-projects-box{
+    border-left: .2rem solid var(--main-color);
+}
+
+.my-projects-box .my-projects-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.my-projects-box .my-projects-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.my-projects-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.my-projects-content .content::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.my-projects-content .content:hover::before{
+    width: 100%;
+}
+
+
+.my-projects-content .content .year{
+    font-size: 20px;
+    color: var(--main-color);
+    padding-bottom: .2rem;
+}
+
+.my-projects .content .year i{
+    margin-right: 20px;
+}
+
+.my-projects .content h3{
+    font-size: 1.5rem;
+}
+
+.my-projects .content p{
+    font-size: 16px;;
+    padding-top: .5rem;
+}
+
+/* section my songs*/
+ .songs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: raw;
+    gap: 2rem;
+    background: var(--bg-color);
+    padding-bottom: 6rem;
+}
+
+.songs-container {
+    padding-top: 4rem;
+    grid-template-columns: 250px;
+    justify-content: center;
+    row-gap: 5.5rem;
+}
+
+.songs-card {
+    margin-left: 240px;
+    margin-top: 5rem;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 8rem 2rem 1.5rem;
+    box-shadow: 0 8px 20px hsla(19, 64%, 48%, .08);
+    border-radius: 1rem;
+    text-align: center;
+    transition: background .4s;
+}
+
+@media (max-width: 1100px) {
+    .songs-card {
+        margin-left: 0;
+    }
+}
+
+.songs-img {
+    width: 150px;
+    position: absolute;
+    inset: 0;
+    top: -2.5rem;
+    margin: 0 auto;
+    transition: transform .4s;
+}
+
+.songs-name {
+    font-size: var(--h3-font-size);
+    font-family: var(--title-font);
+    margin-bottom: .25rem;
+}
+
+.songs-description {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: 1rem;
+}
+
+
+.songs-card:hover .songs-img {
+    transform: translateY(-.25rem);
+}
+
+.songs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: raw;
+    gap: 2rem;
+    background: var(--bg-color);
+    padding-bottom: 6rem;
+}
+
+@media (max-width: 1100px) {
+    .songs {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        background: var(--bg-color);
+        padding-bottom: 6rem;
+    }
+}
+
+
+.see-songs-btn{
+    bottom: 40px;
+    width: 170px;
+}
+
+.see-songs-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+
+.see-songs-btn a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.see-songs-btn a:hover{
+    color: #081b29;
+}
+
+.see-songs-btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.see-songs-btn a:hover::before{
+    width: 100%;
+} 
+
+
+
