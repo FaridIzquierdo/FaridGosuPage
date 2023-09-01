@@ -28,21 +28,27 @@
             </div> -->
         <a href="#" class="logo" style="padding: 5px;"> Farid. </a>
 
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars ri-grid-fill" id="menu-icon-open"></i> <!-- Icono de menú abierto (bars) -->
+            <i class="fas fa-times ri-close-line" id="menu-icon-close" style="display: none;"></i> <!-- Icono de menú cerrado (times) -->
+          </div>
+
         <nav class="navbar">
             <a href="#home" class="active"> <i class="ri-home-3-line change-theme"></i> Home</a>
-            <a href="#aboutme"> <i class="ri-user-line change-theme"></i> About Me </a>
-            <a href="#myprojects"> <i class="ri-folder-upload-line change-theme"></i> My Projects</a>
-            <a href="#mysongs"> <i class="ri-music-line change-theme"></i> My Songs</a>
-            <a href="#contactme"> <i class="ri-cellphone-line change-theme"></i> Contact Me</a>
+            <a href="#about-me"> <i class="ri-user-line change-theme"></i> About Me </a>
+            <a href="#my-projects"> <i class="ri-folder-upload-line change-theme"></i> My Projects</a>
+            <a href="#songs"> <i class="ri-music-line change-theme"></i> My Songs</a>
+            <a href="#contact-me"> <i class="ri-cellphone-line change-theme"></i> Contact Me</a>
 
             <a href="#"><i class="ri-moon-line change-theme" id="theme-button"></i></a>
 
+            <span class="active-nav"></span>
 
         </nav>
     </header>
 
     <!-- section home -->
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, I'm Farid Izquierdo</h1>
             <h3>Frontend Developer</h3>
@@ -88,7 +94,7 @@
                 similique sdasdasd asdsadsadasdas dasd sadsadsadsadas das dsadsadsadsadsa!
             </p>
             <div class="btn-box">
-                <a href="#">Download CV</a>
+                <a href="assets/documents/micv.pdf" download="micv.pdf">Download CV</a>
             </div>
         </div>
     </section>
@@ -193,26 +199,26 @@
                 
                 <article class="songs-card songs-content">
                         <img src="assets/img/farid_ia_only_siluet.png" alt="Spotify API image" class="songs-img">
-                        <h3 class="songs-name">EventXplorer</h3>
+                        <h3 class="songs-name">Caja de Pandora</h3>
                         <span class="songs-description">In progress...</span>
                         <div class="see-songs-btn">
-                            <a href="#" target="_blank"><i class="ri-arrow-up-circle-line"></i></a>
+                            <a href="#" target="_blank"><i class="ri-spotify-fill" style="color: green;"></i></a>
                         </div>
                     </article>
                     <article class="songs-card songs-content">
                         <img src="assets/img/farid_ia_only_siluet.png" alt="Marvel Watchlist image" class="songs-img">
-                        <h3 class="songs-name">GosuStreaming</h3>
+                        <h3 class="songs-name">Estereotipos</h3>
                         <span class="songs-description">In progress...</span>
                         <div class="see-songs-btn">
-                            <a href="#" target="_blank"><i class="ri-arrow-up-circle-line"></i></a>
+                            <a href="#" target="_blank"><i class="ri-spotify-fill" style="color: green;"></i></a>
                         </div>
                     </article>
                     <article class="songs-card songs-content">
                         <img src="assets/img/farid_ia_only_siluet.png" alt="Memory Game image" class="songs-img">
-                        <h3 class="songs-name">GosurrayBand</h3>
+                        <h3 class="songs-name">Tu mirada</h3>
                         <span class="songs-description">In progress...</span>
-                        <div class="see-songs-btn">
-                            <a href="#" target="_blank"><i class="ri-arrow-up-circle-line"></i></a>
+                        <div class="see-songs-btn" >
+                            <a href="#" target="_blank"><i class="ri-spotify-fill" style="color: green;"></i></a>
                         </div>
                 </article>
                 
@@ -221,45 +227,25 @@
 
         </section>
 
-
-        
-
-
-
     </section>
 
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Farid Izquierdo | All Rights Reserved.</p>
+        </div>
+        
+        <div class="footer-iconTop see-songs-btn">
+            <a href="#" ><i class="ri-arrow-up-circle-line"></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/mains.js"></script>
+
 </body>
+
+
 
 </html>
 
 
 
-
-<!-- para la seccion my songs
-     <div class="project-container container grid">
-            <article class="project-card my-projects-content">
-                <img src="assets/img/farid_ia_only_siluet.png" alt="Spotify API image" class="project-img">
-                <h3 class="project-name">EventXplorer</h3>
-                <span class="project-description">In progress...</span>
-                <div class="see-project-btn">
-                    <a href="#" target="_blank"><i class="ri-arrow-up-circle-line"></i></a>
-                </div>
-            </article>
-            <article class="project-card my-projects-content">
-                <img src="assets/img/farid_ia_only_siluet.png" alt="Marvel Watchlist image" class="project-img">
-                <h3 class="project-name">GosuStreaming</h3>
-                <span class="project-description">In progress...</span>
-                <div class="see-project-btn">
-                    <a href="#" target="_blank"><i class="ri-arrow-up-circle-line"></i></a>
-                </div>
-            </article>
-            <article class="project-card my-projects-content">
-                <img src="assets/img/farid_ia_only_siluet.png" alt="Memory Game image" class="project-img">
-                <h3 class="project-name">GosurrayBand</h3>
-                <span class="project-description">In progress...</span>
-                <div class="see-project-btn">
-                    <a href="#" target="_blank"><i class="ri-arrow-up-circle-line"></i></a>
-                </div>
-            </article>
-        </div>
--->
