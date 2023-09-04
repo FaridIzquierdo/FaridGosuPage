@@ -730,7 +730,6 @@ span {
 #menu-icon {
     font-size: 3.5rem;
     display: none;
-    margin-right: 20px;
 }
 
 @media(max-width:948px){
