@@ -46,4 +46,11 @@ window.onscroll = () => {
 }
 
 
+const themeButton = document.getElementById('theme-button');
+const mySong = document.getElementById('mySong');
+    themeButton.addEventListener('click', () => {
+        // play the song
+        mySong.play();
+    });
+
 

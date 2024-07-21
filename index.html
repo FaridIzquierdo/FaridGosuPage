@@ -41,7 +41,6 @@
             <a href="#about-me"> <i class="ri-user-line change-theme"></i> About Me </a>
             <a href="#my-projects"> <i class="ri-folder-upload-line change-theme"></i> My Projects</a>
             <a href="#songs"> <i class="ri-music-line change-theme"></i> My Songs</a>
-            <!-- <a href="#contact-me"> <i class="ri-cellphone-line change-theme"></i> Contact Me</a> -->
 
             <a href="#"><i class="ri-moon-line change-theme" id="theme-button"></i></a>
 
@@ -49,6 +48,9 @@
 
         </nav>
     </header>
+
+    <!-- play audio -->
+    <audio id="mySong" src="assets/audio/mySong.mp3" preload="auto"></audio>
 
     <!-- section home -->
     <section class="home" id="home">
@@ -91,7 +93,7 @@
 
         <div class="about-me-content">
             <h3>Frontend Developer</h3><br>
-            <p>
+            <p style="padding: 15px;">
                 I'm a frontend developer. My goal is to create attractive and functional user interfaces that improve
                 the user experience. In addition to my technical skills, I understand the importance of collaboration
                 and effective communication in an agile development environment.
@@ -113,15 +115,10 @@
                     <div class="my-projects-content">
                         <div class="content">
                             <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
-                            <h3>EventXplorer</h3>
-                            <p style="text-align: justify;"> Es una aplicación que permite al usuario ver una gran
-                                variedad de eventos por las
-                                preferencias que tengan, eventos que esten siendo organizados alrededor de la ciudad en
-                                la que se encuentren. Este proceso se llevará a cabo de manera sencilla y accesible,
-                                tanto para
-                                el usuario asistente, como para el usuario organizador.</p>
+                            <h3>APLICACIÓN DE ORGANIZACIÓN Y VENTA DE TICKETS DE EVENTOS</h3>
+                            <p style="text-align: justify;"> Proyecto académico con la creación de una app web llamada "EventXplorer" creado en Angular utilizando servicios de firebase y también se utilizó la API de Google Map, se utilizó una base de datos relacional Mysql, además de desarrollar el backend con Spring Boot con Java, con una documentación completa y detallada en Swagger y fue desplegada en Azure.  </p>
                             <div class="btn-box" style="margin-top: 10px; ">
-                                <a href="https://github.com/EventXplorer" target="_blank">In progress...</i></a>
+                                <a href="https://github.com/EventXplorer" target="_blank">Ir</i></a>
                             </div>
                         </div>
                     </div>
@@ -129,13 +126,10 @@
                     <div class="my-projects-content">
                         <div class="content">
                             <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
-                            <h3>GosuStreaming</h3>
-                            <p style="text-align: justify;">La aplicación definitiva de streaming de eventos en vivo.
-                                Descubre y disfruta de una
-                                amplia variedad de eventos en tiempo real, personalizados según tus preferencias y
-                                ubicación.</p>
+                            <h3>APLICACIÓN MÓVIL QUE UTILIZA IA PARA EL APRENDIZAJE DE COMPRENSIÓN LECTORA EN NIÑOS CON SINDROME DE DOWN</h3>
+                            <p style="text-align: justify;">Para el desarrollo de esta app móvil llamada "SmartNest", utilicé Flutter para desarrollar una interfaz de usuario intuitiva y amigable. En el backend, implementé Java Spring Boot para gestionar la lógica del servidor y los servicios. Integré Firebase para la autenticación y por el lado de base de datos utilice MySQL, por otro lado utilicé Whisper de OpenAI para el procesamiento de lenguaje natural. Los despliegues de la base de datos y el backend se realizaron en Azure.</p>
                             <div class="btn-box" style="margin-top: 10px;">
-                                <a href="#">In progress...</i></a>
+                                <a href="https://github.com/SmartNest-FM">Ir</i></a>
                             </div>
                         </div>
                     </div>
@@ -143,10 +137,21 @@
                     <div class="my-projects-content">
                         <div class="content">
                             <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
-                            <h3>GosurrayBand</h3>
-                            <p style="text-align: justify;"></p>
+                            <h3>APLICACIÓN DE COORDINACIÓN Y MOVILIDAD DE TRANSPORTES VARIADOS</h3>
+                            <p style="text-align: justify;">Proyecto académico con la creación de una app web llamada "Fatporte" desarrollado en Flutter con Dart, se utilizó una base de datos relacional MySQL, además de desarrollar el backend con Java Spring Boot. Por parte del frontend se hizo el deploy en Firebase y por parte del backend en Azure. </p>
                             <div class="btn-box" style="margin-top: 10px;">
-                                <a href="#">In progress...</i></a>
+                                <a href="https://github.com/Tech-Mobile-Company-WV61">Ir</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-projects-content">
+                        <div class="content">
+                            <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
+                            <h3>APLICACIÓN PARA COMERCIO YENVÍOS COLABORATIVOS AL PERÚ</h3>
+                            <p style="text-align: justify;">Proyecto académico con la creación de una app web llamada "TakeMeHome" desarrollado en Vue JS 3, se utilizo una base de datos relacional PostgreSQL, además de desarrollar el backend Azure con .NET con c#. Por parte del frontend se hizo el deploy en Firebase y por parte del backend en Azure. </p>
+                            <div class="btn-box" style="margin-top: 10px;">
+                                <a href="https://github.com/TakeMeHome-Del-mundo-a-tus-manos">Ir</i></a>
                             </div>
                         </div>
                     </div>
@@ -154,16 +159,15 @@
             </div>
 
             <div class="my-projects-column">
-                <h3 class="title">Certificates</h3>
+                <h3 class="title">Certifieds</h3>
                 <div class="my-projects-box">
                     <div class="my-projects-content">
                         <div class="content">
                             <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
-                            <h3>Certificates about SQL</h3>
+                            <h3>Certifieds about SQL</h3>
                             <br>
-                            <p>🎯 SQL for Data Science</p>
-                            <br>
-                            <p>🎯 Data Wrangling, Analysis and AB Testing With SQL</p>
+                            <p>🎯 Certified SQL for Data Science</p>
+                            <p>🎯 Certified Data Wrangling, Analysis and AB Testing With SQL</p>
 
                         </div>
                     </div>
@@ -171,11 +175,10 @@
                     <div class="my-projects-content">
                         <div class="content">
                             <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
-                            <h3>Certificates about Microsoft Azure</h3>
+                            <h3>Certifieds about Microsoft Azure</h3>
                             <br>
                             <p>🎯 Microsoft Certified Azure Fundamentals</p>
                             <br>
-                            <p>🎯 In progress...</p>
 
                         </div>
                     </div>
@@ -183,11 +186,24 @@
                     <div class="my-projects-content">
                         <div class="content">
                             <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
-                            <h3>Certificates about Microsoft Excel</h3>
+                            <h3>Certifieds about Python</h3>
                             <br>
-                            <p>🎯 Certificate Excel Skills for Business: Essentials </p>
-                            <p>🎯 Certificate Excel Skills for Business: Intermediate I </p>
-                            <p>🎯 In progress...</p>
+                            <p>🎯 Certified Capstone: Retrieving, Processing, and Visualizing Data with Python</p>
+                            <p>🎯 Certified Using Python to Access Web Data</p>
+                            <p>🎯 Certified Using Databases with Python</p>
+                            <p>🎯 Certified Python Data Structures</p>
+
+                        </div>
+                    </div>
+
+                    <div class="my-projects-content">
+                        <div class="content">
+                            <div class="year"><i class="ri-calendar-line"></i> 2020 - 2024 </div>
+                            <h3>Certifieds about Microsoft Excel</h3>
+                            <br>
+                            <p>🎯 Certified Excel Skills for Business: Essentials </p>
+                            <p>🎯 Certified Excel Skills for Business: Intermediate I </p>
+                            <p>🎯 Certified Excel Skills for Business: Advanced</p>
 
                         </div>
                     </div>
